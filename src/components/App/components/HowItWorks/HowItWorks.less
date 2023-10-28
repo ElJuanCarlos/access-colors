@@ -1,0 +1,65 @@
+@import '~variables';
+
+.container {
+  @media @small {
+    margin-top: -36px;
+  }
+
+  @media @medium {
+    margin-top: -18px;
+  }
+
+  @media @large {
+    margin-top: 27px;
+  }
+}
+
+.innerContainer {
+  @media @small {
+    margin: 0 20px;
+  }
+
+  @media @medium {
+    margin: 0 auto;
+    width: @medium-screen-width - 40px;
+  }
+
+  @media @large {
+    margin: 0 auto;
+    width: @large-screen-width - 40px;
+  }
+}
+
+.title {
+  font-weight: 400;
+
+  @media @small-medium {
+    font-size: 18px;
+  }
+
+  @media @large {
+    font-size: 21px;
+  }
+}
+
+.content {
+  @media @small-medium {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media @large {
+    font-size: 18px;
+    line-height: 27px;
+    width: 469px;
+  }
+}
+
+.link {
+  color: #0066cc;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

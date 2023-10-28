@@ -1,0 +1,27 @@
+@import '~variables';
+
+body {
+  margin: 0;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #212121;
+}
+
+.previewContainer {
+  transform: translateY(-72px);
+
+  @media @small {
+    height: 855px;
+  }
+
+  @media @medium {
+    height: 423px;
+  }
+
+  @media @large {
+    height: 306px;
+  }
+}

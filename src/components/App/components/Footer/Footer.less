@@ -1,0 +1,113 @@
+@import '~variables';
+
+.container {
+  padding: 0 0 40px 0;
+  background-color: #f0f5f9;
+
+  @media @small {
+    margin-top: 63px;
+  }
+
+  @media @medium-large {
+    margin-top: 90px;
+  }
+}
+
+.innerContainer {
+  @media @medium {
+    margin: 0 auto;
+    width: @medium-screen-width;
+  }
+
+  @media @large {
+    margin: 0 auto;
+    width: @large-screen-width;
+    padding-top: 27px;
+  }
+}
+
+.contentContainer {
+  width: 210px;
+  vertical-align: top;
+  padding: 20px;
+
+  @media @medium {
+    display: inline-block;
+  }
+
+  @media @large {
+    display: inline-block;
+  }
+}
+
+.broughtToYouContainer {
+  composes: contentContainer;
+}
+
+.contentHeader {
+  margin-bottom: 9px;
+  font-weight: 400;
+
+  @media @small-medium {
+    font-size: 18px;
+  }
+
+  @media @large {
+    font-size: 21px;
+  }
+}
+
+.content {
+  margin: 0;
+}
+
+.link {
+  display: inline-block;
+  height: 36px;
+  margin-top: 20px;
+  color: #0066cc;
+  text-decoration: none;
+
+  @media @small-medium {
+    font-size: 14px;
+  }
+
+  @media @large {
+    font-size: 18px;
+  }
+}
+
+.image {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+
+.linkText {
+  margin-left: 10px;
+  line-height: 36px;
+  vertical-align: top;
+
+  .link:hover & {
+    text-decoration: underline;
+  }
+}
+
+.haveFeatureIdeasContainer {
+  composes: contentContainer;
+
+  @media @large {
+    margin-left: 9px;
+  }
+}
+
+.icon {
+  font-size: 36px;
+  color: #212121;
+  transition: color 0.2s ease;
+
+  .link:hover & {
+    color: #1D8C74;
+  }
+}
